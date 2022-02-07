@@ -1,9 +1,9 @@
 <template>
   <div class="post">
+    <div> {{ post.id }}</div>
     <div> {{ post.title }}</div>
     <div> {{ post.body }}</div>
     <div class="post_button">
-      <MyButton> Изменить</MyButton>
       <MyButton @click="$emit('remove',post)"> Удалить</MyButton>
     </div>
   </div>
